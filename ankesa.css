@@ -1,0 +1,142 @@
+.navbar{
+    width: 100%;
+    height: 70px;
+    margin-bottom: 30px;
+}
+.menu{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    list-style-type: none;
+    font-size: 30px;
+}
+.a{
+    color: rgba(63, 61, 61, 0.79);
+    text-decoration: none;
+}
+.a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.body{
+    background-image: url(images.jpg);
+    background-size: cover;
+}
+/* Përgjithësisht për faqen */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Formulari */
+.complaint-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-image: linear-gradient(to bottom, #ffffff, #f0f8ff);
+    margin-top: 80px; /* Për të lënë hapësirë për menynë */
+}
+
+/* Titulli */
+.complaint-form h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Grupi i fushave të formularit */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Inputet dhe Textarea */
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #7c4dff;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Butoni i dërgimit */
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #7c4dff;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #5b3cc4;
+}
+
+.btn-submit:active {
+    background-color: #4a2e99;
+}
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        font-size: 16px;
+        height: auto;
+    }
+
+    .complaint-form {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .menu {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        font-size: 16px;
+    }
+
+    .complaint-form {
+        padding: 15px;
+    }
+
+    .btn-submit {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
